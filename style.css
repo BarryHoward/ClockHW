@@ -1,18 +1,20 @@
-*{
-	box-sizing: border-box;
-	
-}
+* {
+  box-sizing: border-box; }
 
-.clockbox{
-	color: white;
-	background: black;
-	display: block;
-	width: 500px;
-	height: 300px;
-	font-size: 30pt;
-	margin: 20px;
-	margin-left: 100px;
+.clockbox {
+  font-family: 'Pattaya', sans-serif;
+  color: white;
+  background: black;
+  display: block;
+  width: 700px;
+  height: 400px;
+  font-size: 40pt;
+  margin: 20px;
+  margin-left: 100px;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px; }
 
-	text-align: center;
-	padding: 100px;
-}
+#box3 {
+  font-family: 'Arima Madurai', cursive;
+  font-weight: 100; }
