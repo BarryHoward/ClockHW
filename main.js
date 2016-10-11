@@ -30,8 +30,10 @@ function updateClock(clockID1, clockID2, clockID3){
 
 
 	var totalHexTime = hexString(Math.round(clockTime.getTime()/1000));
-	clockID3.innerHTML = totalHexTime.slice(totalHexTime.length-6, totalHexTime.length);
-	clockID3.style.background = ("#" + hexTime);
+	totalHexTime = totalHexTime.slice(totalHexTime.length-6, totalHexTime.length);
+	clockID3.innerHTML = totalHexTime;
+	console.log("#" +totalHexTime)
+	clockID3.style.background = ("#" + totalHexTime);
 	// clockID.style.color = ("#" + opHexTime);
 
 
