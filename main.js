@@ -15,9 +15,12 @@ function updateClock(clockID1, clockID2, clockID3){
 	} else {
 		hourTime = clockTime.getHours();
 	}
-	hourTime = checkZero(hourTime);
-	minTime = checkZero(clockTime.getMinutes());
-	secTime = checkZero(clockTime.getSeconds());
+	hourTime = checkZero(hourTime).toString();
+	console.log("Hour: " +hourTime);
+	minTime = checkZero(clockTime.getMinutes()).toString();
+	console.log("Min: " + minTime);
+	secTime = checkZero(clockTime.getSeconds()).toString();
+	console.log("Sec: " + secTime);
 
 	var hexHourTime = hexString(hourTime);
 	var hexMinTime = hexString(minTime);
@@ -32,9 +35,7 @@ function updateClock(clockID1, clockID2, clockID3){
 	var totalHexTime = hexString(Math.round(clockTime.getTime()/1000));
 	totalHexTime = totalHexTime.slice(totalHexTime.length-6, totalHexTime.length);
 	clockID3.innerHTML = totalHexTime;
-	console.log("#" +totalHexTime)
 	clockID3.style.background = ("#" + totalHexTime);
-	// clockID.style.color = ("#" + opHexTime);
 
 
 }
